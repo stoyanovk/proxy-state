@@ -1,10 +1,9 @@
-import { store, setUsersList, setUser } from "../storeExample";
-import { useStoreSelector } from "../_store";
+import { setUsersList, setUser, useStoreSelector } from "../storeExample";
 import { getUsers } from "../api";
 import { useEffect } from "react";
 
 export function UserList() {
-  const { usersList } = useStoreSelector(store, ({ usersList }) => ({
+  const { usersList } = useStoreSelector(({ usersList }) => ({
     usersList
   }));
   useEffect(() => {

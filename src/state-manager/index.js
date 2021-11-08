@@ -1,2 +1,2 @@
 export { createCustomStore } from "./createCustomStore";
-export { useStoreSelector } from "./useCustomeStore";
+export { createSelector } from "./createStoreSelector";

@@ -1,7 +1,7 @@
-import { store, incCount } from "../storeExample";
-import { useStoreSelector } from "../_store";
+import { useStoreSelector, incCount } from "../storeExample";
+
 export function Counter() {
-  const { count, user } = useStoreSelector(store, ({ count, user }) => ({
+  const { count, user } = useStoreSelector(({ count, user }) => ({
     count,
     user
   }));

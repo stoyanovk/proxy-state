@@ -1,8 +1,7 @@
-import { store } from "../storeExample";
-import { useStoreSelector } from "../_store";
+import { useStoreSelector } from "../storeExample";
 
 export function UserInfo() {
-  const { user } = useStoreSelector(store, ({ user }) => ({ user }));
+  const { user } = useStoreSelector(({ user }) => ({ user }));
   console.log("render UserInfo");
 
   if (!user) {
