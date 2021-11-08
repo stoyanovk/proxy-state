@@ -1,2 +1,2 @@
-# proxy-state
+# connect-demo
 Created with CodeSandbox
